@@ -22,8 +22,8 @@ const offers:Offer[] =[
   },
 
   {
-    title:'Winter Special Deal',
-    description:' get 1medium+1large pizza in nly Rs.1999'
+    title:'Great Deal',
+    description:' get 1medium+1large pizza in only Rs.1999'
   },
 
 ];
@@ -33,7 +33,7 @@ const handleOfferClick=(description:string) =>{
 return(
   <section className='py-10'>
     <div className='container mx-auto text-center'>
-      <h2 className='text-4xl font-bold mb-6 text-white'>Special Offer's</h2>
+      <h2 className='text-4xl font-bold mb-6 text-white'>Special Offers</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6'>
         {offers.map((offer,index)=>(
           <button key={index}

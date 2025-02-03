@@ -1,5 +1,4 @@
 import React from 'react'
-import { FiDivideCircle } from 'react-icons/fi'
 
 export default function Progressor() {
   return (

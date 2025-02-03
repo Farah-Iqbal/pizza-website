@@ -1,10 +1,16 @@
 import React from 'react'
-
+import Image from 'next/image'
 export default function Banner() {
   return (
     <div className='relative overflow-hidden bg-gradient-to-r from-black to-grey-700 font-sans px-6 py-12 mb-7'>
       <div className='absolute inset-0 opacity-40'>
-        <img src='./pizza background.jpg' alt='delicious pizza banner' className='w-full h-full object-cover'/>
+      <Image 
+          src='/pizza-background.jpg' 
+          alt='Delicious pizza banner' 
+          layout='fill' // Makes image cover the entire div
+          objectFit='cover' // Ensures the image scales properly
+          priority // Loads the image faster for better LCP
+        />
       </div>
       <div className='relative z-10 container mx-auto flex flex-col justify-center items-center text-center'>
         <h2 className='text-white sm:text-5xl font-bold mb-4'>Discover Our Menu</h2>
